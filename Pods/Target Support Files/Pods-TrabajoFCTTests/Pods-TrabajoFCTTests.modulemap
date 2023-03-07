@@ -1,0 +1,6 @@
+framework module Pods_TrabajoFCTTests {
+  umbrella header "Pods-TrabajoFCTTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

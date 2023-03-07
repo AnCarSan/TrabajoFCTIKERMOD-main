@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D16DBAD299CDF7F00DCC04A /* PruebaListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16DBAC299CDF7F00DCC04A /* PruebaListaViewController.swift */; };
+		0D16DBAF299E2FF800DCC04A /* PlayerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16DBAE299E2FF800DCC04A /* PlayerViewVC.swift */; };
+		0D30A83F29B09B20000BE56E /* UsuarioElegido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30A83E29B09B20000BE56E /* UsuarioElegido.swift */; };
+		0D416DDE2993B38E001C48D0 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D416DDD2993B38E001C48D0 /* TabBarVC.swift */; };
+		0D416DE02993C9CE001C48D0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D416DDF2993C9CE001C48D0 /* HomeVC.swift */; };
+		0D5313D2299246450033998E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313D1299246450033998E /* AppDelegate.swift */; };
+		0D5313D4299246450033998E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313D3299246450033998E /* SceneDelegate.swift */; };
+		0D5313D6299246450033998E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313D5299246450033998E /* ViewController.swift */; };
+		0D5313D9299246450033998E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5313D7299246450033998E /* Main.storyboard */; };
+		0D5313DB299246470033998E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5313DA299246470033998E /* Assets.xcassets */; };
+		0D5313DE299246470033998E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5313DC299246470033998E /* LaunchScreen.storyboard */; };
+		0D5313E9299246480033998E /* TrabajoFCTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313E8299246480033998E /* TrabajoFCTTests.swift */; };
+		0D5313F3299246480033998E /* TrabajoFCTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313F2299246480033998E /* TrabajoFCTUITests.swift */; };
+		0D5313F5299246480033998E /* TrabajoFCTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5313F4299246480033998E /* TrabajoFCTUITestsLaunchTests.swift */; };
+		0D53141029926D390033998E /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140429926D380033998E /* Roboto-BlackItalic.ttf */; };
+		0D53141129926D390033998E /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140529926D380033998E /* Roboto-LightItalic.ttf */; };
+		0D53141229926D390033998E /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140629926D380033998E /* Roboto-Black.ttf */; };
+		0D53141329926D390033998E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140729926D380033998E /* Roboto-Thin.ttf */; };
+		0D53141429926D390033998E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140829926D380033998E /* Roboto-Regular.ttf */; };
+		0D53141529926D390033998E /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140929926D380033998E /* Roboto-Italic.ttf */; };
+		0D53141629926D390033998E /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140A29926D390033998E /* Roboto-BoldItalic.ttf */; };
+		0D53141729926D390033998E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140B29926D390033998E /* Roboto-Medium.ttf */; };
+		0D53141829926D390033998E /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140C29926D390033998E /* Roboto-MediumItalic.ttf */; };
+		0D53141929926D390033998E /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140D29926D390033998E /* Roboto-Light.ttf */; };
+		0D53141A29926D390033998E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140E29926D390033998E /* Roboto-Bold.ttf */; };
+		0D53141B29926D390033998E /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D53140F29926D390033998E /* Roboto-ThinItalic.ttf */; };
+		0D53141D2992736A0033998E /* ViewControlerPerfilPersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53141C2992736A0033998E /* ViewControlerPerfilPersonal.swift */; };
+		0D53141F299289750033998E /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53141E299289750033998E /* ViewControllerRegistro.swift */; };
+		0D626916299F719900A849EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D626915299F719900A849EA /* User.swift */; };
+		0D626918299F72B000A849EA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D626917299F72B000A849EA /* DataManager.swift */; };
+		0D71239E29952BAC00F1642D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71239D29952BAC00F1642D /* CellView.swift */; };
+		0D7879A729B6004E0037205B /* MiListaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7879A629B6004E0037205B /* MiListaVC.swift */; };
+		0D7879A929B600C20037205B /* FavoritosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7879A829B600C20037205B /* FavoritosVC.swift */; };
+		0D8C7EC029B1FC0700D960BC /* Aparicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */; };
+		0D8C7EC229B202B300D960BC /* MusicaElegida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EC129B202B300D960BC /* MusicaElegida.swift */; };
+		0D8C7EC629B2130500D960BC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */; };
+		0DCC2D9B29B5E21700F7B5A8 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCC2D9A29B5E21700F7B5A8 /* CustomCollectionViewCell.swift */; };
+		0DCC2D9D29B5E49E00F7B5A8 /* searchMultimediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCC2D9C29B5E49E00F7B5A8 /* searchMultimediaVC.swift */; };
+		0DD4379129B74B50004BB05D /* MusicaAMostrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4379029B74B50004BB05D /* MusicaAMostrar.swift */; };
+		0DD4379329B75485004BB05D /* MusicaPrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4379229B75485004BB05D /* MusicaPrueba.swift */; };
+		0DE0241C29A64596005F0C4D /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0241B29A64596005F0C4D /* Musica.swift */; };
+		0DE0241E29A64816005F0C4D /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0241D29A64816005F0C4D /* Serie.swift */; };
+		0DE0242029A648B9005F0C4D /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0241F29A648B9005F0C4D /* Pelicula.swift */; };
+		0DE0242229A64A61005F0C4D /* Cantante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0242129A64A61005F0C4D /* Cantante.swift */; };
+		0DE0242429A64AD9005F0C4D /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0242329A64AD9005F0C4D /* Grupo.swift */; };
+		0DE0242629A64B70005F0C4D /* Reparto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0242529A64B70005F0C4D /* Reparto.swift */; };
+		75642E6818690FE83688D643 /* Pods_TrabajoFCTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B990A943CC9BF29650B0AB /* Pods_TrabajoFCTTests.framework */; };
+		C7906695971A5E8C6E861798 /* Pods_TrabajoFCT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCE364933F7E4CE03FE83E9 /* Pods_TrabajoFCT.framework */; };
+		D29C7220A02814C33A9D36EE /* Pods_TrabajoFCT_TrabajoFCTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A42019DB5471981A9A891 /* Pods_TrabajoFCT_TrabajoFCTUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D5313E5299246470033998E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D5313C6299246450033998E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5313CD299246450033998E;
+			remoteInfo = TrabajoFCT;
+		};
+		0D5313EF299246480033998E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D5313C6299246450033998E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5313CD299246450033998E;
+			remoteInfo = TrabajoFCT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D16DBAC299CDF7F00DCC04A /* PruebaListaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaListaViewController.swift; sourceTree = "<group>"; };
+		0D16DBAE299E2FF800DCC04A /* PlayerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewVC.swift; sourceTree = "<group>"; };
+		0D30A83E29B09B20000BE56E /* UsuarioElegido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioElegido.swift; sourceTree = "<group>"; };
+		0D416DDD2993B38E001C48D0 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		0D416DDF2993C9CE001C48D0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0D5313CE299246450033998E /* TrabajoFCT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrabajoFCT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5313D1299246450033998E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D5313D3299246450033998E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0D5313D5299246450033998E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D5313D8299246450033998E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D5313DA299246470033998E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D5313DD299246470033998E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D5313DF299246470033998E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5313E4299246470033998E /* TrabajoFCTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrabajoFCTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5313E8299246480033998E /* TrabajoFCTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajoFCTTests.swift; sourceTree = "<group>"; };
+		0D5313EE299246480033998E /* TrabajoFCTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrabajoFCTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5313F2299246480033998E /* TrabajoFCTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajoFCTUITests.swift; sourceTree = "<group>"; };
+		0D5313F4299246480033998E /* TrabajoFCTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajoFCTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D53140429926D380033998E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0D53140529926D380033998E /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		0D53140629926D380033998E /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		0D53140729926D380033998E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		0D53140829926D380033998E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0D53140929926D380033998E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0D53140A29926D390033998E /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0D53140B29926D390033998E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0D53140C29926D390033998E /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0D53140D29926D390033998E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		0D53140E29926D390033998E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0D53140F29926D390033998E /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0D53141C2992736A0033998E /* ViewControlerPerfilPersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlerPerfilPersonal.swift; sourceTree = "<group>"; };
+		0D53141E299289750033998E /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
+		0D626915299F719900A849EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0D626917299F72B000A849EA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0D71239D29952BAC00F1642D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		0D7879A629B6004E0037205B /* MiListaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiListaVC.swift; sourceTree = "<group>"; };
+		0D7879A829B600C20037205B /* FavoritosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosVC.swift; sourceTree = "<group>"; };
+		0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aparicion.swift; sourceTree = "<group>"; };
+		0D8C7EC129B202B300D960BC /* MusicaElegida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaElegida.swift; sourceTree = "<group>"; };
+		0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0DCC2D9A29B5E21700F7B5A8 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DCC2D9C29B5E49E00F7B5A8 /* searchMultimediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchMultimediaVC.swift; sourceTree = "<group>"; };
+		0DD4379029B74B50004BB05D /* MusicaAMostrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaAMostrar.swift; sourceTree = "<group>"; };
+		0DD4379229B75485004BB05D /* MusicaPrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaPrueba.swift; sourceTree = "<group>"; };
+		0DE0241B29A64596005F0C4D /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		0DE0241D29A64816005F0C4D /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		0DE0241F29A648B9005F0C4D /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
+		0DE0242129A64A61005F0C4D /* Cantante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantante.swift; sourceTree = "<group>"; };
+		0DE0242329A64AD9005F0C4D /* Grupo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
+		0DE0242529A64B70005F0C4D /* Reparto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reparto.swift; sourceTree = "<group>"; };
+		13B990A943CC9BF29650B0AB /* Pods_TrabajoFCTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFCTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE800195348E6D9D1A8A7D1 /* Pods-TrabajoFCT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCT.debug.xcconfig"; path = "Target Support Files/Pods-TrabajoFCT/Pods-TrabajoFCT.debug.xcconfig"; sourceTree = "<group>"; };
+		431D8ABB8221CBFF9FBC49BE /* Pods-TrabajoFCT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCT.release.xcconfig"; path = "Target Support Files/Pods-TrabajoFCT/Pods-TrabajoFCT.release.xcconfig"; sourceTree = "<group>"; };
+		4CCE364933F7E4CE03FE83E9 /* Pods_TrabajoFCT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFCT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6FD19411033885A20D2DF1 /* Pods-TrabajoFCT-TrabajoFCTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCT-TrabajoFCTUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrabajoFCT-TrabajoFCTUITests/Pods-TrabajoFCT-TrabajoFCTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A12750860DB11D1BE7B99F32 /* Pods-TrabajoFCTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCTTests.debug.xcconfig"; path = "Target Support Files/Pods-TrabajoFCTTests/Pods-TrabajoFCTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9A42019DB5471981A9A891 /* Pods_TrabajoFCT_TrabajoFCTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFCT_TrabajoFCTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF64DBE31DA85522192C4160 /* Pods-TrabajoFCT-TrabajoFCTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCT-TrabajoFCTUITests.release.xcconfig"; path = "Target Support Files/Pods-TrabajoFCT-TrabajoFCTUITests/Pods-TrabajoFCT-TrabajoFCTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E28ECEC037724F6FCD581152 /* Pods-TrabajoFCTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFCTTests.release.xcconfig"; path = "Target Support Files/Pods-TrabajoFCTTests/Pods-TrabajoFCTTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D5313CB299246450033998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7906695971A5E8C6E861798 /* Pods_TrabajoFCT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313E1299246470033998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75642E6818690FE83688D643 /* Pods_TrabajoFCTTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313EB299246480033998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29C7220A02814C33A9D36EE /* Pods_TrabajoFCT_TrabajoFCTUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5313C5299246450033998E = {
+			isa = PBXGroup;
+			children = (
+				0D5313D0299246450033998E /* TrabajoFCT */,
+				0D5313E7299246470033998E /* TrabajoFCTTests */,
+				0D5313F1299246480033998E /* TrabajoFCTUITests */,
+				0D5313CF299246450033998E /* Products */,
+				B25F8230D332DD8DCF1C1EF0 /* Pods */,
+				F6A5F044437F6B2B134D6B66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D5313CF299246450033998E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D5313CE299246450033998E /* TrabajoFCT.app */,
+				0D5313E4299246470033998E /* TrabajoFCTTests.xctest */,
+				0D5313EE299246480033998E /* TrabajoFCTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D5313D0299246450033998E /* TrabajoFCT */ = {
+			isa = PBXGroup;
+			children = (
+				0D53140329926D1D0033998E /* Fonts */,
+				0D5313D1299246450033998E /* AppDelegate.swift */,
+				0DD4379029B74B50004BB05D /* MusicaAMostrar.swift */,
+				0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */,
+				0D5313D3299246450033998E /* SceneDelegate.swift */,
+				0D626917299F72B000A849EA /* DataManager.swift */,
+				0DD4379229B75485004BB05D /* MusicaPrueba.swift */,
+				0D8C7EC129B202B300D960BC /* MusicaElegida.swift */,
+				0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */,
+				0D626915299F719900A849EA /* User.swift */,
+				0D30A83E29B09B20000BE56E /* UsuarioElegido.swift */,
+				0DE0241B29A64596005F0C4D /* Musica.swift */,
+				0DE0241D29A64816005F0C4D /* Serie.swift */,
+				0DE0241F29A648B9005F0C4D /* Pelicula.swift */,
+				0DE0242129A64A61005F0C4D /* Cantante.swift */,
+				0DE0242329A64AD9005F0C4D /* Grupo.swift */,
+				0DE0242529A64B70005F0C4D /* Reparto.swift */,
+				0D5313D7299246450033998E /* Main.storyboard */,
+				0D7879A629B6004E0037205B /* MiListaVC.swift */,
+				0D7879A829B600C20037205B /* FavoritosVC.swift */,
+				0DCC2D9A29B5E21700F7B5A8 /* CustomCollectionViewCell.swift */,
+				0DCC2D9C29B5E49E00F7B5A8 /* searchMultimediaVC.swift */,
+				0D416DDD2993B38E001C48D0 /* TabBarVC.swift */,
+				0D16DBAE299E2FF800DCC04A /* PlayerViewVC.swift */,
+				0D16DBAC299CDF7F00DCC04A /* PruebaListaViewController.swift */,
+				0D53141C2992736A0033998E /* ViewControlerPerfilPersonal.swift */,
+				0D416DDF2993C9CE001C48D0 /* HomeVC.swift */,
+				0D5313D5299246450033998E /* ViewController.swift */,
+				0D53141E299289750033998E /* ViewControllerRegistro.swift */,
+				0D71239D29952BAC00F1642D /* CellView.swift */,
+				0D5313DA299246470033998E /* Assets.xcassets */,
+				0D5313DC299246470033998E /* LaunchScreen.storyboard */,
+				0D5313DF299246470033998E /* Info.plist */,
+			);
+			path = TrabajoFCT;
+			sourceTree = "<group>";
+		};
+		0D5313E7299246470033998E /* TrabajoFCTTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D5313E8299246480033998E /* TrabajoFCTTests.swift */,
+			);
+			path = TrabajoFCTTests;
+			sourceTree = "<group>";
+		};
+		0D5313F1299246480033998E /* TrabajoFCTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D5313F2299246480033998E /* TrabajoFCTUITests.swift */,
+				0D5313F4299246480033998E /* TrabajoFCTUITestsLaunchTests.swift */,
+			);
+			path = TrabajoFCTUITests;
+			sourceTree = "<group>";
+		};
+		0D53140329926D1D0033998E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D53140629926D380033998E /* Roboto-Black.ttf */,
+				0D53140429926D380033998E /* Roboto-BlackItalic.ttf */,
+				0D53140E29926D390033998E /* Roboto-Bold.ttf */,
+				0D53140A29926D390033998E /* Roboto-BoldItalic.ttf */,
+				0D53140929926D380033998E /* Roboto-Italic.ttf */,
+				0D53140D29926D390033998E /* Roboto-Light.ttf */,
+				0D53140529926D380033998E /* Roboto-LightItalic.ttf */,
+				0D53140B29926D390033998E /* Roboto-Medium.ttf */,
+				0D53140C29926D390033998E /* Roboto-MediumItalic.ttf */,
+				0D53140829926D380033998E /* Roboto-Regular.ttf */,
+				0D53140729926D380033998E /* Roboto-Thin.ttf */,
+				0D53140F29926D390033998E /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B25F8230D332DD8DCF1C1EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EE800195348E6D9D1A8A7D1 /* Pods-TrabajoFCT.debug.xcconfig */,
+				431D8ABB8221CBFF9FBC49BE /* Pods-TrabajoFCT.release.xcconfig */,
+				9B6FD19411033885A20D2DF1 /* Pods-TrabajoFCT-TrabajoFCTUITests.debug.xcconfig */,
+				BF64DBE31DA85522192C4160 /* Pods-TrabajoFCT-TrabajoFCTUITests.release.xcconfig */,
+				A12750860DB11D1BE7B99F32 /* Pods-TrabajoFCTTests.debug.xcconfig */,
+				E28ECEC037724F6FCD581152 /* Pods-TrabajoFCTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6A5F044437F6B2B134D6B66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CCE364933F7E4CE03FE83E9 /* Pods_TrabajoFCT.framework */,
+				AB9A42019DB5471981A9A891 /* Pods_TrabajoFCT_TrabajoFCTUITests.framework */,
+				13B990A943CC9BF29650B0AB /* Pods_TrabajoFCTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D5313CD299246450033998E /* TrabajoFCT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5313F8299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCT" */;
+			buildPhases = (
+				8CF9D5777AEDBEF63CBC0887 /* [CP] Check Pods Manifest.lock */,
+				0D5313CA299246450033998E /* Sources */,
+				0D5313CB299246450033998E /* Frameworks */,
+				0D5313CC299246450033998E /* Resources */,
+				ACEA041654A6E0F5CB1969CC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrabajoFCT;
+			productName = TrabajoFCT;
+			productReference = 0D5313CE299246450033998E /* TrabajoFCT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D5313E3299246470033998E /* TrabajoFCTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5313FB299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCTTests" */;
+			buildPhases = (
+				347E6FFF4A32270B5828DABC /* [CP] Check Pods Manifest.lock */,
+				0D5313E0299246470033998E /* Sources */,
+				0D5313E1299246470033998E /* Frameworks */,
+				0D5313E2299246470033998E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D5313E6299246470033998E /* PBXTargetDependency */,
+			);
+			name = TrabajoFCTTests;
+			productName = TrabajoFCTTests;
+			productReference = 0D5313E4299246470033998E /* TrabajoFCTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D5313ED299246480033998E /* TrabajoFCTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5313FE299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCTUITests" */;
+			buildPhases = (
+				65D5FF0D66E801C22FBEC90B /* [CP] Check Pods Manifest.lock */,
+				0D5313EA299246480033998E /* Sources */,
+				0D5313EB299246480033998E /* Frameworks */,
+				0D5313EC299246480033998E /* Resources */,
+				421ACF5ADFC479A9C02A12A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D5313F0299246480033998E /* PBXTargetDependency */,
+			);
+			name = TrabajoFCTUITests;
+			productName = TrabajoFCTUITests;
+			productReference = 0D5313EE299246480033998E /* TrabajoFCTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D5313C6299246450033998E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0D5313CD299246450033998E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0D5313E3299246470033998E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0D5313CD299246450033998E;
+					};
+					0D5313ED299246480033998E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0D5313CD299246450033998E;
+					};
+				};
+			};
+			buildConfigurationList = 0D5313C9299246450033998E /* Build configuration list for PBXProject "TrabajoFCT" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D5313C5299246450033998E;
+			productRefGroup = 0D5313CF299246450033998E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D5313CD299246450033998E /* TrabajoFCT */,
+				0D5313E3299246470033998E /* TrabajoFCTTests */,
+				0D5313ED299246480033998E /* TrabajoFCTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D5313CC299246450033998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D53141B29926D390033998E /* Roboto-ThinItalic.ttf in Resources */,
+				0D53141A29926D390033998E /* Roboto-Bold.ttf in Resources */,
+				0D53141329926D390033998E /* Roboto-Thin.ttf in Resources */,
+				0D53141529926D390033998E /* Roboto-Italic.ttf in Resources */,
+				0D5313DE299246470033998E /* LaunchScreen.storyboard in Resources */,
+				0D53141429926D390033998E /* Roboto-Regular.ttf in Resources */,
+				0D53141829926D390033998E /* Roboto-MediumItalic.ttf in Resources */,
+				0D5313DB299246470033998E /* Assets.xcassets in Resources */,
+				0D53141129926D390033998E /* Roboto-LightItalic.ttf in Resources */,
+				0D5313D9299246450033998E /* Main.storyboard in Resources */,
+				0D53141029926D390033998E /* Roboto-BlackItalic.ttf in Resources */,
+				0D53141929926D390033998E /* Roboto-Light.ttf in Resources */,
+				0D53141729926D390033998E /* Roboto-Medium.ttf in Resources */,
+				0D53141629926D390033998E /* Roboto-BoldItalic.ttf in Resources */,
+				0D53141229926D390033998E /* Roboto-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313E2299246470033998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313EC299246480033998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		347E6FFF4A32270B5828DABC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrabajoFCTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421ACF5ADFC479A9C02A12A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT-TrabajoFCTUITests/Pods-TrabajoFCT-TrabajoFCTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT-TrabajoFCTUITests/Pods-TrabajoFCT-TrabajoFCTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT-TrabajoFCTUITests/Pods-TrabajoFCT-TrabajoFCTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65D5FF0D66E801C22FBEC90B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrabajoFCT-TrabajoFCTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF9D5777AEDBEF63CBC0887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrabajoFCT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEA041654A6E0F5CB1969CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT/Pods-TrabajoFCT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT/Pods-TrabajoFCT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrabajoFCT/Pods-TrabajoFCT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D5313CA299246450033998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5313D6299246450033998E /* ViewController.swift in Sources */,
+				0D626918299F72B000A849EA /* DataManager.swift in Sources */,
+				0D416DE02993C9CE001C48D0 /* HomeVC.swift in Sources */,
+				0DE0242029A648B9005F0C4D /* Pelicula.swift in Sources */,
+				0D53141F299289750033998E /* ViewControllerRegistro.swift in Sources */,
+				0DCC2D9D29B5E49E00F7B5A8 /* searchMultimediaVC.swift in Sources */,
+				0DE0242629A64B70005F0C4D /* Reparto.swift in Sources */,
+				0DE0241E29A64816005F0C4D /* Serie.swift in Sources */,
+				0D8C7EC629B2130500D960BC /* CustomTableViewCell.swift in Sources */,
+				0D5313D2299246450033998E /* AppDelegate.swift in Sources */,
+				0DD4379329B75485004BB05D /* MusicaPrueba.swift in Sources */,
+				0DE0242429A64AD9005F0C4D /* Grupo.swift in Sources */,
+				0DE0242229A64A61005F0C4D /* Cantante.swift in Sources */,
+				0D71239E29952BAC00F1642D /* CellView.swift in Sources */,
+				0D5313D4299246450033998E /* SceneDelegate.swift in Sources */,
+				0DD4379129B74B50004BB05D /* MusicaAMostrar.swift in Sources */,
+				0D7879A729B6004E0037205B /* MiListaVC.swift in Sources */,
+				0D416DDE2993B38E001C48D0 /* TabBarVC.swift in Sources */,
+				0D8C7EC229B202B300D960BC /* MusicaElegida.swift in Sources */,
+				0D30A83F29B09B20000BE56E /* UsuarioElegido.swift in Sources */,
+				0D16DBAD299CDF7F00DCC04A /* PruebaListaViewController.swift in Sources */,
+				0D16DBAF299E2FF800DCC04A /* PlayerViewVC.swift in Sources */,
+				0D7879A929B600C20037205B /* FavoritosVC.swift in Sources */,
+				0DCC2D9B29B5E21700F7B5A8 /* CustomCollectionViewCell.swift in Sources */,
+				0D8C7EC029B1FC0700D960BC /* Aparicion.swift in Sources */,
+				0D53141D2992736A0033998E /* ViewControlerPerfilPersonal.swift in Sources */,
+				0DE0241C29A64596005F0C4D /* Musica.swift in Sources */,
+				0D626916299F719900A849EA /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313E0299246470033998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5313E9299246480033998E /* TrabajoFCTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5313EA299246480033998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5313F5299246480033998E /* TrabajoFCTUITestsLaunchTests.swift in Sources */,
+				0D5313F3299246480033998E /* TrabajoFCTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D5313E6299246470033998E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D5313CD299246450033998E /* TrabajoFCT */;
+			targetProxy = 0D5313E5299246470033998E /* PBXContainerItemProxy */;
+		};
+		0D5313F0299246480033998E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D5313CD299246450033998E /* TrabajoFCT */;
+			targetProxy = 0D5313EF299246480033998E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D5313D7299246450033998E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D5313D8299246450033998E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D5313DC299246470033998E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D5313DD299246470033998E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D5313F6299246480033998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D5313F7299246480033998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D5313F9299246480033998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE800195348E6D9D1A8A7D1 /* Pods-TrabajoFCT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrabajoFCT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D5313FA299246480033998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431D8ABB8221CBFF9FBC49BE /* Pods-TrabajoFCT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrabajoFCT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D5313FC299246480033998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12750860DB11D1BE7B99F32 /* Pods-TrabajoFCTTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrabajoFCT.app/TrabajoFCT";
+			};
+			name = Debug;
+		};
+		0D5313FD299246480033998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28ECEC037724F6FCD581152 /* Pods-TrabajoFCTTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrabajoFCT.app/TrabajoFCT";
+			};
+			name = Release;
+		};
+		0D5313FF299246480033998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6FD19411033885A20D2DF1 /* Pods-TrabajoFCT-TrabajoFCTUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrabajoFCT;
+			};
+			name = Debug;
+		};
+		0D531400299246480033998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF64DBE31DA85522192C4160 /* Pods-TrabajoFCT-TrabajoFCTUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TrabajoFCTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrabajoFCT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D5313C9299246450033998E /* Build configuration list for PBXProject "TrabajoFCT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5313F6299246480033998E /* Debug */,
+				0D5313F7299246480033998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D5313F8299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5313F9299246480033998E /* Debug */,
+				0D5313FA299246480033998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D5313FB299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5313FC299246480033998E /* Debug */,
+				0D5313FD299246480033998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D5313FE299246480033998E /* Build configuration list for PBXNativeTarget "TrabajoFCTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5313FF299246480033998E /* Debug */,
+				0D531400299246480033998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D5313C6299246450033998E /* Project object */;
+}
