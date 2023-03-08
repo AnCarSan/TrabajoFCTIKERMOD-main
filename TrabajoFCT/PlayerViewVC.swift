@@ -53,6 +53,58 @@ class PlayerViewVC: UIViewController {
         }
     }
     
+    func chargeFav(favID:Int, favInstancia:String) {
+        let postFav: [String : Any] = [
+            "id" : favID,
+            "favorito" : favInstancia
+        ]
+        
+        let url = URL(string: "http://127.0.0.1:5000/api/favorito")!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "POST"
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: postFav, options: .prettyPrinted)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard
+                let data = data,
+                let response = response as? HTTPURLResponse,
+                error == nil
+            else {
+                print("error", error ?? URLError(.badServerResponse))
+                return
+            }
+            
+            guard (200 ... 299) ~= response.statusCode else {
+                print("statusCode should be 2xx, but is \(response.statusCode)")
+                print("response = \(response)")
+                return
+            }
+            
+          
+            
+            do {
+                let responseObject = try JSONDecoder().decode(ResponseObject<Favorito>.self, from: data)
+                print(responseObject)
+            } catch {
+                print(error) // parsing error
+                
+                if let responseString = String(data: data, encoding: .utf8) {
+                    print("responseString = \(responseString)")
+                } else {
+                    print("unable to parse response as string")
+                }
+            }
+        }
+        
+        task.resume()
+        }
+    
     var listaMusicaId : [String] = []
     var listaMusicaNombre : [String] = []
      var listaMusicaGenero : [String] = []
@@ -66,6 +118,8 @@ class PlayerViewVC: UIViewController {
      var listaMusicaEnlaceAmazon : [String] = []
      var listaMusicaEnlaceItunes : [String] = []
      var listaMusicaEnlaceSpotify : [String] = []
+    var listaMusicaFavorito : [String] = []
+    
     
     @IBAction func favoritoAcc(_ sender: Any) {
         
@@ -175,6 +229,8 @@ class PlayerViewVC: UIViewController {
                     self.listaMusicaEnlaceItunes.removeAll()
 
                     self.listaMusicaEnlaceSpotify.removeAll()
+                    
+                    self.listaMusicaFavorito.removeAll()
 
                     for musicas in self.dataManager.musicaPrueba{
 
@@ -203,6 +259,9 @@ class PlayerViewVC: UIViewController {
                         self.listaMusicaEnlaceItunes.append(musicas.enlaceItunes)
 
                         self.listaMusicaEnlaceSpotify.append(musicas.enlaceSpotify)
+                        
+                        self.listaMusicaFavorito.append(musicas.favorito)
+
 
                     }
 
@@ -247,20 +306,29 @@ class PlayerViewVC: UIViewController {
         generoCancion.text = listaMusicaGenero[0]
         momentoAparicion.text = listaMusicaMomentoDeAparicion[0]
         cantanteOGrupo.text = listaMusicaCantante[0]
-        print(listaMusicaNombre)
-        print(listaMusicaDuracion)
-        print(listaMusicaGenero)
-        print(listaMusicaMomentoDeAparicion)
-        print(listaMusicaCantante)
+        if listaMusicaFavorito[0] == "true"{
+            FAvView.setImage(UIImage(named: "FavoritoTrue"), for: .normal)
+        }
+        else if listaMusicaFavorito[0] == "false"{
+            FAvView.setImage(UIImage(named: "FavoritoFalse"), for: .normal)
+        }
     
     
-    if listaMusicaFavorito[0] == "true"{
-        FAvView.setImage(UIImage(named: "FavoritoTrue"), for: .normal)
-    }
-    if listaMusicaFavorito[0] == "false"{
-        cell.favorito.setImage(UIImage(named: "FavoritoFalse"), for: .normal)
-    }
         
+    }
+    
+    @IBAction func favAcct(_ sender: Any) {
+        if listaMusicaFavorito[0] == "true"{
+            FAvView.setImage(UIImage(named: "FavoritoFalse"), for: .normal)
+            chargeFav(favID: Int(listaMusicaId[0])!, favInstancia: "false")
+            listaMusicaFavorito[0] = "false"
+            
+        }
+        else if listaMusicaFavorito[0] == "false"{
+            FAvView.setImage(UIImage(named: "FavoritoTrue"), for: .normal)
+            chargeFav(favID: Int(listaMusicaId[0])!, favInstancia: "true")
+            listaMusicaFavorito[0] = "true"
+        }
     }
     
     @IBAction func dissmis(_ sender: Any) {

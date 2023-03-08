@@ -6,14 +6,8 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
         let cell = table.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CustomTableViewCell
         cell.Titulo.text = listaMusicaNombre[indexPath.row]
         let imageMusic = convertBase64StringToImage(imageBase64String: listaMusicaFoto[indexPath.row])
-        if listaMusicaFavorito[indexPath.row] == "true"{
-            cell.favorito.setImage(UIImage(named: "FavoritoTrue"), for: .normal)
-        }
-        else if listaMusicaFavorito[indexPath.row] == "false"{
-            cell.favorito.setImage(UIImage(named: "FavoritoFalse"), for: .normal)
-        }
         cell.imagen.image = imageMusic
-        cell.aparicion.text = listaMusicaAparicion[indexPath.row]
+        cell.aparicion.text = listaMusicaMomentoDeAparicion[indexPath.row]
         
         
         
@@ -44,6 +38,9 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
         let imageData = Data(base64Encoded: imageBase64String)
         let image = UIImage(data: imageData!)
         return image!
+    }
+    @IBAction func recargar(_ sender: Any) {
+        table.reloadData()
     }
     
     @IBOutlet weak var TítuloSeriePeli: UILabel!

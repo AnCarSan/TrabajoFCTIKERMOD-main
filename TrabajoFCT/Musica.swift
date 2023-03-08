@@ -18,11 +18,11 @@ class Musica : Codable{
     init(json: [String: Any]) {
         id = json["id"] as? Int ?? 0
         nombre = json["nombre"] as? String ?? ""
-        genero = json["contrasena"] as? String ?? ""
+        genero = json["genero"] as? String ?? ""
         cantante = json["cantante"] as? String ?? ""
         foto = json["foto"] as? String ?? ""
         aparicion = json["aparicion"] as? String ?? ""
-        momentoDeAparicion = json["momentoDeAparicion"] as? String ?? ""
+        momentoDeAparicion = json["momentoAparicion"] as? String ?? ""
         grupo = json["grupo"] as? String ?? ""
         anoDePublicacion = json["anoDePublicacion"] as? Int ?? 0
         duracion = json["duracion"] as? String ?? ""

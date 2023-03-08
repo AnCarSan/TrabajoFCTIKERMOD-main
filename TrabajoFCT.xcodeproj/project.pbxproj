@@ -40,6 +40,8 @@
 		0D71239E29952BAC00F1642D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71239D29952BAC00F1642D /* CellView.swift */; };
 		0D7879A729B6004E0037205B /* MiListaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7879A629B6004E0037205B /* MiListaVC.swift */; };
 		0D7879A929B600C20037205B /* FavoritosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7879A829B600C20037205B /* FavoritosVC.swift */; };
+		0D8547A029B8812100539613 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D85479F29B8812100539613 /* Favorito.swift */; };
+		0D8547A229B8815A00539613 /* EnLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8547A129B8815A00539613 /* EnLista.swift */; };
 		0D8C7EC029B1FC0700D960BC /* Aparicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */; };
 		0D8C7EC229B202B300D960BC /* MusicaElegida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EC129B202B300D960BC /* MusicaElegida.swift */; };
 		0D8C7EC629B2130500D960BC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */; };
@@ -113,6 +115,8 @@
 		0D71239D29952BAC00F1642D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		0D7879A629B6004E0037205B /* MiListaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiListaVC.swift; sourceTree = "<group>"; };
 		0D7879A829B600C20037205B /* FavoritosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosVC.swift; sourceTree = "<group>"; };
+		0D85479F29B8812100539613 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
+		0D8547A129B8815A00539613 /* EnLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnLista.swift; sourceTree = "<group>"; };
 		0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aparicion.swift; sourceTree = "<group>"; };
 		0D8C7EC129B202B300D960BC /* MusicaElegida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaElegida.swift; sourceTree = "<group>"; };
 		0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,15 +197,17 @@
 				0D53140329926D1D0033998E /* Fonts */,
 				0D5313D1299246450033998E /* AppDelegate.swift */,
 				0DD4379029B74B50004BB05D /* MusicaAMostrar.swift */,
+				0D85479F29B8812100539613 /* Favorito.swift */,
+				0D8547A129B8815A00539613 /* EnLista.swift */,
+				0DE0241B29A64596005F0C4D /* Musica.swift */,
+				0D626915299F719900A849EA /* User.swift */,
 				0D8C7EC529B2130500D960BC /* CustomTableViewCell.swift */,
 				0D5313D3299246450033998E /* SceneDelegate.swift */,
 				0D626917299F72B000A849EA /* DataManager.swift */,
 				0DD4379229B75485004BB05D /* MusicaPrueba.swift */,
 				0D8C7EC129B202B300D960BC /* MusicaElegida.swift */,
 				0D8C7EBF29B1FC0700D960BC /* Aparicion.swift */,
-				0D626915299F719900A849EA /* User.swift */,
 				0D30A83E29B09B20000BE56E /* UsuarioElegido.swift */,
-				0DE0241B29A64596005F0C4D /* Musica.swift */,
 				0DE0241D29A64816005F0C4D /* Serie.swift */,
 				0DE0241F29A648B9005F0C4D /* Pelicula.swift */,
 				0DE0242129A64A61005F0C4D /* Cantante.swift */,
@@ -537,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8547A229B8815A00539613 /* EnLista.swift in Sources */,
 				0D5313D6299246450033998E /* ViewController.swift in Sources */,
 				0D626918299F72B000A849EA /* DataManager.swift in Sources */,
 				0D416DE02993C9CE001C48D0 /* HomeVC.swift in Sources */,
@@ -545,6 +552,7 @@
 				0DCC2D9D29B5E49E00F7B5A8 /* searchMultimediaVC.swift in Sources */,
 				0DE0242629A64B70005F0C4D /* Reparto.swift in Sources */,
 				0DE0241E29A64816005F0C4D /* Serie.swift in Sources */,
+				0D8547A029B8812100539613 /* Favorito.swift in Sources */,
 				0D8C7EC629B2130500D960BC /* CustomTableViewCell.swift in Sources */,
 				0D5313D2299246450033998E /* AppDelegate.swift in Sources */,
 				0DD4379329B75485004BB05D /* MusicaPrueba.swift in Sources */,

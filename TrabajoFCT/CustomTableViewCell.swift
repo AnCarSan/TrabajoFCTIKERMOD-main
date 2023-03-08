@@ -11,5 +11,4 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var Titulo: UILabel!
     @IBOutlet weak var aparicion: UILabel!
-    @IBOutlet weak var favorito: UIButton!
 }
