@@ -1,8 +1,10 @@
 class EnLista : Codable{
-    public let EnLista: String
+    public let nombre: String
+    public let enLista: String
     
     init(json: [String: Any]) {
-        EnLista = json["enLista"] as? String ?? ""
+        nombre = json["nombre"] as? String ?? ""
+        enLista = json["enLista"] as? String ?? ""
         
     }
 }

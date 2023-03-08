@@ -43,14 +43,81 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
         table.reloadData()
     }
     
+    func chargeLista(listNombre:String, listInstancia:String) {
+        let postFav: [String : Any] = [
+            "nombre" : listNombre,
+            "enLista" : listInstancia
+        ]
+        
+        let url = URL(string: "http://127.0.0.1:5000/api/lista")!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "POST"
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: postFav, options: .prettyPrinted)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard
+                let data = data,
+                let response = response as? HTTPURLResponse,
+                error == nil
+            else {
+                print("error", error ?? URLError(.badServerResponse))
+                return
+            }
+            
+            guard (200 ... 299) ~= response.statusCode else {
+                print("statusCode should be 2xx, but is \(response.statusCode)")
+                print("response = \(response)")
+                return
+            }
+            
+          
+            
+            do {
+                let responseObject = try JSONDecoder().decode(ResponseObject<EnLista>.self, from: data)
+                print(responseObject)
+            } catch {
+                print(error) // parsing error
+                
+                if let responseString = String(data: data, encoding: .utf8) {
+                    print("responseString = \(responseString)")
+                } else {
+                    print("unable to parse response as string")
+                }
+            }
+        }
+        
+        task.resume()
+        }
+    
+    @IBOutlet weak var botonStyle: UIButton!
+    @IBAction func anadirALista(_ sender: Any) {
+        
+            if MultimediaFav == "true"{
+                chargeLista(listNombre: nombreSerie, listInstancia: "false")
+                botonStyle.setTitle("+Añadir a tu lista", for: .normal)
+                MultimediaFav = "false"
+                
+            }
+            else if listaMusicaFavorito[0] == "false"{
+                botonStyle.setTitle("-Quitar de tu lista", for: .normal)
+                chargeLista(listNombre: nombreSerie, listInstancia: "true")
+                MultimediaFav = "true"
+            }
+    }
+    
     @IBOutlet weak var TítuloSeriePeli: UILabel!
     @IBOutlet weak var table: UITableView!
     
     @IBOutlet weak var nombreMultim: UILabel!
     @IBOutlet weak var ImagenPeliSerie: UIImageView!
     
-    var imgStr : String = ""
-    var nombreSerie : String = ""
+    
     
     let dataManager : DataManager = DataManager()
     
@@ -58,22 +125,23 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
         let form: T
     }
     
-    
-
+    var imgStr : String = ""
+    var nombreSerie : String = ""
+    var MultimediaFav : String = ""
     var listaMusicaId : [String] = []
-     var listaMusicaNombre : [String] = []
-     var listaMusicaGenero : [String] = []
-     var listaMusicaCantante : [String] = []
-     var listaMusicaFoto : [String] = []
-     var listaMusicaAparicion : [String] = []
-     var listaMusicaMomentoDeAparicion : [String] = []
-     var listaMusicaGrupo : [String] = []
-     var listaMusicaAnoDePublicacion : [String] = []
-     var listaMusicaDuracion : [String] = []
-     var listaMusicaEnlaceYoutube : [String] = []
-     var listaMusicaEnlaceAmazon : [String] = []
-     var listaMusicaEnlaceItunes : [String] = []
-     var listaMusicaEnlaceSpotify : [String] = []
+    var listaMusicaNombre : [String] = []
+    var listaMusicaGenero : [String] = []
+    var listaMusicaCantante : [String] = []
+    var listaMusicaFoto : [String] = []
+    var listaMusicaAparicion : [String] = []
+    var listaMusicaMomentoDeAparicion : [String] = []
+    var listaMusicaGrupo : [String] = []
+    var listaMusicaAnoDePublicacion : [String] = []
+    var listaMusicaDuracion : [String] = []
+    var listaMusicaEnlaceYoutube : [String] = []
+    var listaMusicaEnlaceAmazon : [String] = []
+    var listaMusicaEnlaceItunes : [String] = []
+    var listaMusicaEnlaceSpotify : [String] = []
     var listaMusicaFavorito : [String] = []
     
 
@@ -263,6 +331,14 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
         nombreMultim.text = nombreSerie
         ImagenPeliSerie.image = convertBase64StringToImage(imageBase64String: imgStr)
         table.dataSource = self
+        sleep(2)
+        if MultimediaFav == "true"{
+            botonStyle.setTitle("-Quitar de tu lista", for: .normal)
+        }
+        else if MultimediaFav == "false"{
+            botonStyle.setTitle("+Añadir a tu lista", for: .normal)
+        }
+        
     }
     
     

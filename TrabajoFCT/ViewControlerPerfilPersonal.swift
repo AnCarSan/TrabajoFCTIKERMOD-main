@@ -124,6 +124,7 @@ class ViewControllerPerfilPersonal: UIViewController {
          super.viewDidLoad()
           loadUsers()
           loadSelectedUsers()
+          sleep(1)
           ImagenPerfilPersonal.layer.cornerRadius = ImagenPerfilPersonal.frame.size.width/2
           for i in 1...listaUserNombre.count{
               if listaUserNombre[i-1] ==  UserElegidoNombre[0] && UserElegidoId[0] ==  listaUserId[i-1] {

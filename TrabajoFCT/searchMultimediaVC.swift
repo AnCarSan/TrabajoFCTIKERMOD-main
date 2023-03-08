@@ -13,6 +13,7 @@ class ViewControllerDeBuscar: UIViewController {
             let destinationVC = segue.destination as? PruebaListaViewController
             destinationVC?.imgStr = listaSerieFotoPaisaje[indexpath]
             destinationVC?.nombreSerie = listaSerieNombre[indexpath]
+            destinationVC?.MultimediaFav = listaSerieEnLista[indexpath]
         }
         
     }
@@ -61,6 +62,8 @@ class ViewControllerDeBuscar: UIViewController {
     
     var listaSerieFotoPaisaje : [String] = []
     
+    var listaSerieEnLista : [String] = []
+    
     let dataManager : DataManager = DataManager()
     
     func loadMovies() {
@@ -93,6 +96,7 @@ class ViewControllerDeBuscar: UIViewController {
                     self.listaSerieFoto.append(peliculas.foto)
                     
                     self.listaSerieFotoPaisaje.append(peliculas.imagenPaisaje)
+                    self.listaSerieEnLista.append(peliculas.enLista)
                     
                     
                     
@@ -112,6 +116,9 @@ class ViewControllerDeBuscar: UIViewController {
         
     }
     
+    @IBAction func dismissButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
     func loadSeries() {
         
         URLSession.shared.dataTask(with: url3!) {(data, response, error) in
@@ -184,6 +191,7 @@ class ViewControllerDeBuscar: UIViewController {
                     self.listaSerieDuracion.append(series.duracion)
                     
                     self.listaSerieFotoPaisaje.append(series.imagenPaisaje)
+                    self.listaSerieEnLista.append(series.enLista)
                     
                 }
                 
