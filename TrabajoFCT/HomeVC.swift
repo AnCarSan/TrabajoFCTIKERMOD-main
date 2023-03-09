@@ -20,6 +20,8 @@ class ViewControllerHome: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "entrarMusica"{
+            print(listaSerieNombre)
+            print(listaSerieEnLista)
             let destinationVC = segue.destination as? PruebaListaViewController
             destinationVC?.imgStr = listaSerieFotoPaisaje[indexpath]
             destinationVC?.nombreSerie = listaSerieNombre[indexpath]
@@ -118,7 +120,7 @@ class ViewControllerHome: UIViewController {
     
     func loadMovies() {
         
-        URLSession.shared.dataTask(with: url5!) {(data, response, error) in
+        URLSession.shared.dataTask(with: url3!) {(data, response, error) in
             
             guard let data = data,
                   
@@ -185,8 +187,8 @@ class ViewControllerHome: UIViewController {
     }
     
     func loadSeries() {
-        
-        URLSession.shared.dataTask(with: url3!) {(data, response, error) in
+        sleep(2)
+        URLSession.shared.dataTask(with: url5!) {(data, response, error) in
             
             guard let data = data,
                   
@@ -205,33 +207,6 @@ class ViewControllerHome: UIViewController {
                     self.dataManager.serie.append(Serie(json: nombre))
                     
                 }
-    
-                
-                self.listaSerieNombre.removeAll()
-                
-                self.listaSerieGenero.removeAll()
-                
-                self.listaSerieDirector.removeAll()
-                
-                self.listaSerieProtagonista.removeAll()
-                
-                self.listaSerieDescripcionCorta.removeAll()
-                
-                self.listaSerieTemporadas.removeAll()
-                
-                self.listaSerieEpisodios.removeAll()
-                
-                self.listaSerieFoto.removeAll()
-                
-                self.listaSerieAnoDePublicacion.removeAll()
-                
-                self.listaSerieDuracion.removeAll()
-                
-                self.listaSerieFotoPaisaje.removeAll()
-                sleep(2)
-                
-                
-                
                 
                 for series in self.dataManager.serie{
                     
@@ -319,7 +294,7 @@ class ViewControllerHome: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
         }
         loadSeries()
-        sleep(2)
+        sleep(4)
         loadMovies()
         mostrarDatos()
     }

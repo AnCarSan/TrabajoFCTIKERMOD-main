@@ -16,7 +16,7 @@ class Serie : Codable{
     
     init(json: [String: Any]) {
         nombre = json["nombre"] as? String ?? ""
-        genero = json["contrasena"] as? String ?? ""
+        genero = json["genero"] as? String ?? ""
         director = json["director"] as? String ?? ""
         protagonista = json["protagonista"] as? String ?? ""
         descripcionCorta = json["descripcionCorta"] as? String ?? ""
@@ -25,9 +25,7 @@ class Serie : Codable{
         foto = json["foto"] as? String ?? ""
         anoDePublicacion = json["anoDePublicacion"] as? Int ?? 0
         duracion = json["duracion"] as? String ?? ""
-        
-        enLista = json["favorito"] as? String ?? ""
-        
+        enLista = json["enLista"] as? String ?? ""
         imagenPaisaje = json["imagenPaisaje"] as? String ?? ""
         }
 }

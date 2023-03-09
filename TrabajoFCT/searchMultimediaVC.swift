@@ -117,7 +117,6 @@ class ViewControllerDeBuscar: UIViewController {
     }
     
     @IBAction func dismissButton(_ sender: Any) {
-        dismiss(animated: true)
     }
     func loadSeries() {
         

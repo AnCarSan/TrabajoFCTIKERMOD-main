@@ -104,7 +104,7 @@ class PruebaListaViewController: UIViewController, UITableViewDataSource, UITabl
                 MultimediaFav = "false"
                 
             }
-            else if listaMusicaFavorito[0] == "false"{
+            else if MultimediaFav == "false"{
                 botonStyle.setTitle("-Quitar de tu lista", for: .normal)
                 chargeLista(listNombre: nombreSerie, listInstancia: "true")
                 MultimediaFav = "true"
